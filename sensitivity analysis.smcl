@@ -1,0 +1,354 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}/Users/eleonor/Documents/Long/log/sensitivity analysis.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}27 Jul 2021, 23:34:30
+
+{com}. 
+. xi: oaxaca Lwage Age Gender Married Married_fe i.Degree Exp Exp2  i.Sector i.Firm , by(escape) weight(1) relax 
+{txt}i.Degree{col 19}_IDegree_0-8{col 39}(naturally coded; _IDegree_0 omitted)
+i.Sector{col 19}_ISector_0-9{col 39}(naturally coded; _ISector_0 omitted)
+i.Firm{col 19}_IFirm_0-4{col 39}(naturally coded; _IFirm_0 omitted)
+{res}{txt}(model 2 has zero variance coefficients)
+{res}
+{txt}Blinder-Oaxaca decomposition{col 49}Number of obs{col 67}= {res}     8,925
+{txt}{col 51}Model           =     {res}linear
+{txt}Group 1: escape = {res}0{txt}{col 51}N of obs 1      = {res}      8094
+{txt}Group 2: escape = {res}1{txt}{col 51}N of obs 2      = {res}       831
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}       Lwage{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      z{col 46}   P>|z|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}overall      {txt}{c |}
+{space 5}group_1 {c |}{col 14}{res}{space 2} 2.798409{col 26}{space 2} .0066586{col 37}{space 1}  420.27{col 46}{space 3}0.000{col 54}{space 4} 2.785358{col 67}{space 3} 2.811459
+{txt}{space 5}group_2 {c |}{col 14}{res}{space 2} 2.161752{col 26}{space 2} .0235696{col 37}{space 1}   91.72{col 46}{space 3}0.000{col 54}{space 4} 2.115557{col 67}{space 3} 2.207948
+{txt}{space 2}difference {c |}{col 14}{res}{space 2} .6366562{col 26}{space 2} .0244921{col 37}{space 1}   25.99{col 46}{space 3}0.000{col 54}{space 4} .5886526{col 67}{space 3} .6846597
+{txt}{space 3}explained {c |}{col 14}{res}{space 2} .4176099{col 26}{space 2} .0247378{col 37}{space 1}   16.88{col 46}{space 3}0.000{col 54}{space 4} .3691247{col 67}{space 3} .4660951
+{txt}{space 1}unexplained {c |}{col 14}{res}{space 2} .2190463{col 26}{space 2} .0311284{col 37}{space 1}    7.04{col 46}{space 3}0.000{col 54}{space 4} .1580357{col 67}{space 3} .2800568
+{txt}{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}explained    {txt}{c |}
+{space 9}Age {c |}{col 14}{res}{space 2}-.0473148{col 26}{space 2} .0100587{col 37}{space 1}   -4.70{col 46}{space 3}0.000{col 54}{space 4}-.0670296{col 67}{space 3}-.0276001
+{txt}{space 6}Gender {c |}{col 14}{res}{space 2}-.0259797{col 26}{space 2} .0052802{col 37}{space 1}   -4.92{col 46}{space 3}0.000{col 54}{space 4}-.0363288{col 67}{space 3}-.0156307
+{txt}{space 5}Married {c |}{col 14}{res}{space 2}-.0022352{col 26}{space 2} .0024462{col 37}{space 1}   -0.91{col 46}{space 3}0.361{col 54}{space 4}-.0070297{col 67}{space 3} .0025593
+{txt}{space 2}Married_fe {c |}{col 14}{res}{space 2} -.020213{col 26}{space 2} .0036367{col 37}{space 1}   -5.56{col 46}{space 3}0.000{col 54}{space 4}-.0273408{col 67}{space 3}-.0130852
+{txt}{space 2}_IDegree_1 {c |}{col 14}{res}{space 2} .0429626{col 26}{space 2} .0321276{col 37}{space 1}    1.34{col 46}{space 3}0.181{col 54}{space 4}-.0200063{col 67}{space 3} .1059315
+{txt}{space 2}_IDegree_2 {c |}{col 14}{res}{space 2} .0160761{col 26}{space 2} .0188157{col 37}{space 1}    0.85{col 46}{space 3}0.393{col 54}{space 4}-.0208019{col 67}{space 3} .0529541
+{txt}{space 2}_IDegree_3 {c |}{col 14}{res}{space 2} .0338416{col 26}{space 2}  .024421{col 37}{space 1}    1.39{col 46}{space 3}0.166{col 54}{space 4}-.0140226{col 67}{space 3} .0817058
+{txt}{space 2}_IDegree_4 {c |}{col 14}{res}{space 2} .0167471{col 26}{space 2} .0064729{col 37}{space 1}    2.59{col 46}{space 3}0.010{col 54}{space 4} .0040605{col 67}{space 3} .0294337
+{txt}{space 2}_IDegree_5 {c |}{col 14}{res}{space 2} .0224518{col 26}{space 2} .0066728{col 37}{space 1}    3.36{col 46}{space 3}0.001{col 54}{space 4} .0093733{col 67}{space 3} .0355302
+{txt}{space 2}_IDegree_6 {c |}{col 14}{res}{space 2}-.0244718{col 26}{space 2} .0096336{col 37}{space 1}   -2.54{col 46}{space 3}0.011{col 54}{space 4}-.0433534{col 67}{space 3}-.0055903
+{txt}{space 2}_IDegree_7 {c |}{col 14}{res}{space 2} .0831558{col 26}{space 2}  .014582{col 37}{space 1}    5.70{col 46}{space 3}0.000{col 54}{space 4} .0545757{col 67}{space 3}  .111736
+{txt}{space 2}_IDegree_8 {c |}{col 14}{res}{space 2}-.0003747{col 26}{space 2} .0037841{col 37}{space 1}   -0.10{col 46}{space 3}0.921{col 54}{space 4}-.0077914{col 67}{space 3}  .007042
+{txt}{space 9}Exp {c |}{col 14}{res}{space 2} .4195533{col 26}{space 2} .0254779{col 37}{space 1}   16.47{col 46}{space 3}0.000{col 54}{space 4} .3696175{col 67}{space 3} .4694891
+{txt}{space 8}Exp2 {c |}{col 14}{res}{space 2}-.2278732{col 26}{space 2} .0150947{col 37}{space 1}  -15.10{col 46}{space 3}0.000{col 54}{space 4}-.2574583{col 67}{space 3}-.1982882
+{txt}{space 2}_ISector_1 {c |}{col 14}{res}{space 2}-.0008946{col 26}{space 2} .0004877{col 37}{space 1}   -1.83{col 46}{space 3}0.067{col 54}{space 4}-.0018505{col 67}{space 3} .0000612
+{txt}{space 2}_ISector_2 {c |}{col 14}{res}{space 2} .0015395{col 26}{space 2} .0007854{col 37}{space 1}    1.96{col 46}{space 3}0.050{col 54}{space 4} 6.86e-08{col 67}{space 3} .0030789
+{txt}{space 2}_ISector_3 {c |}{col 14}{res}{space 2} .0001364{col 26}{space 2} .0001881{col 37}{space 1}    0.73{col 46}{space 3}0.468{col 54}{space 4}-.0002322{col 67}{space 3}  .000505
+{txt}{space 2}_ISector_4 {c |}{col 14}{res}{space 2} .0081019{col 26}{space 2} .0018302{col 37}{space 1}    4.43{col 46}{space 3}0.000{col 54}{space 4} .0045147{col 67}{space 3}  .011689
+{txt}{space 2}_ISector_5 {c |}{col 14}{res}{space 2} .0064914{col 26}{space 2} .0018233{col 37}{space 1}    3.56{col 46}{space 3}0.000{col 54}{space 4} .0029178{col 67}{space 3} .0100649
+{txt}{space 2}_ISector_6 {c |}{col 14}{res}{space 2}-.0004466{col 26}{space 2} .0004304{col 37}{space 1}   -1.04{col 46}{space 3}0.300{col 54}{space 4}-.0012903{col 67}{space 3} .0003971
+{txt}{space 2}_ISector_7 {c |}{col 14}{res}{space 2} .0003644{col 26}{space 2} .0004408{col 37}{space 1}    0.83{col 46}{space 3}0.408{col 54}{space 4}-.0004996{col 67}{space 3} .0012284
+{txt}{space 2}_ISector_8 {c |}{col 14}{res}{space 2} .0102952{col 26}{space 2} .0011943{col 37}{space 1}    8.62{col 46}{space 3}0.000{col 54}{space 4} .0079544{col 67}{space 3} .0126361
+{txt}{space 2}_ISector_9 {c |}{col 14}{res}{space 2} .0303777{col 26}{space 2} .0042447{col 37}{space 1}    7.16{col 46}{space 3}0.000{col 54}{space 4} .0220582{col 67}{space 3} .0386972
+{txt}{space 4}_IFirm_1 {c |}{col 14}{res}{space 2}-.0027838{col 26}{space 2} .0066584{col 37}{space 1}   -0.42{col 46}{space 3}0.676{col 54}{space 4}-.0158341{col 67}{space 3} .0102665
+{txt}{space 4}_IFirm_2 {c |}{col 14}{res}{space 2}-.0029382{col 26}{space 2} .0023013{col 37}{space 1}   -1.28{col 46}{space 3}0.202{col 54}{space 4}-.0074487{col 67}{space 3} .0015724
+{txt}{space 4}_IFirm_3 {c |}{col 14}{res}{space 2} .0147761{col 26}{space 2}  .003576{col 37}{space 1}    4.13{col 46}{space 3}0.000{col 54}{space 4} .0077674{col 67}{space 3} .0217849
+{txt}{space 4}_IFirm_4 {c |}{col 14}{res}{space 2} .0662648{col 26}{space 2} .0083619{col 37}{space 1}    7.92{col 46}{space 3}0.000{col 54}{space 4} .0498757{col 67}{space 3} .0826539
+{txt}{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}unexplained  {txt}{c |}
+{space 9}Age {c |}{col 14}{res}{space 2}-.3421341{col 26}{space 2} .1555591{col 37}{space 1}   -2.20{col 46}{space 3}0.028{col 54}{space 4}-.6470244{col 67}{space 3}-.0372438
+{txt}{space 6}Gender {c |}{col 14}{res}{space 2} .0036008{col 26}{space 2} .0193712{col 37}{space 1}    0.19{col 46}{space 3}0.853{col 54}{space 4}-.0343661{col 67}{space 3} .0415677
+{txt}{space 5}Married {c |}{col 14}{res}{space 2} .0523306{col 26}{space 2} .0372611{col 37}{space 1}    1.40{col 46}{space 3}0.160{col 54}{space 4}-.0206999{col 67}{space 3}  .125361
+{txt}{space 2}Married_fe {c |}{col 14}{res}{space 2}-.0182615{col 26}{space 2} .0156607{col 37}{space 1}   -1.17{col 46}{space 3}0.244{col 54}{space 4}-.0489559{col 67}{space 3} .0124329
+{txt}{space 2}_IDegree_1 {c |}{col 14}{res}{space 2}-.0119189{col 26}{space 2} .1539019{col 37}{space 1}   -0.08{col 46}{space 3}0.938{col 54}{space 4}-.3135611{col 67}{space 3} .2897233
+{txt}{space 2}_IDegree_2 {c |}{col 14}{res}{space 2}-.0037028{col 26}{space 2} .1458956{col 37}{space 1}   -0.03{col 46}{space 3}0.980{col 54}{space 4}-.2896529{col 67}{space 3} .2822473
+{txt}{space 2}_IDegree_3 {c |}{col 14}{res}{space 2} .0397912{col 26}{space 2} .1638418{col 37}{space 1}    0.24{col 46}{space 3}0.808{col 54}{space 4}-.2813329{col 67}{space 3} .3609153
+{txt}{space 2}_IDegree_4 {c |}{col 14}{res}{space 2} .0177391{col 26}{space 2} .0433459{col 37}{space 1}    0.41{col 46}{space 3}0.682{col 54}{space 4}-.0672173{col 67}{space 3} .1026956
+{txt}{space 2}_IDegree_5 {c |}{col 14}{res}{space 2}-.0010131{col 26}{space 2} .0035157{col 37}{space 1}   -0.29{col 46}{space 3}0.773{col 54}{space 4}-.0079038{col 67}{space 3} .0058776
+{txt}{space 2}_IDegree_6 {c |}{col 14}{res}{space 2}  .108104{col 26}{space 2} .1244405{col 37}{space 1}    0.87{col 46}{space 3}0.385{col 54}{space 4} -.135795{col 67}{space 3} .3520029
+{txt}{space 2}_IDegree_7 {c |}{col 14}{res}{space 2}-.0011362{col 26}{space 2} .0050635{col 37}{space 1}   -0.22{col 46}{space 3}0.822{col 54}{space 4}-.0110604{col 67}{space 3}  .008788
+{txt}{space 2}_IDegree_8 {c |}{col 14}{res}{space 2} .0115957{col 26}{space 2} .0110024{col 37}{space 1}    1.05{col 46}{space 3}0.292{col 54}{space 4}-.0099686{col 67}{space 3} .0331599
+{txt}{space 9}Exp {c |}{col 14}{res}{space 2} .1934706{col 26}{space 2}  .089032{col 37}{space 1}    2.17{col 46}{space 3}0.030{col 54}{space 4} .0189712{col 67}{space 3}   .36797
+{txt}{space 8}Exp2 {c |}{col 14}{res}{space 2}-.0045718{col 26}{space 2} .0441768{col 37}{space 1}   -0.10{col 46}{space 3}0.918{col 54}{space 4}-.0911569{col 67}{space 3} .0820132
+{txt}{space 2}_ISector_1 {c |}{col 14}{res}{space 2}  .000365{col 26}{space 2} .0011232{col 37}{space 1}    0.32{col 46}{space 3}0.745{col 54}{space 4}-.0018365{col 67}{space 3} .0025664
+{txt}{space 2}_ISector_2 {c |}{col 14}{res}{space 2} .0000841{col 26}{space 2} .0015595{col 37}{space 1}    0.05{col 46}{space 3}0.957{col 54}{space 4}-.0029725{col 67}{space 3} .0031407
+{txt}{space 2}_ISector_3 {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (omitted)
+{space 2}_ISector_4 {c |}{col 14}{res}{space 2} .0010469{col 26}{space 2}  .005791{col 37}{space 1}    0.18{col 46}{space 3}0.857{col 54}{space 4}-.0103032{col 67}{space 3} .0123971
+{txt}{space 2}_ISector_5 {c |}{col 14}{res}{space 2}-.0011874{col 26}{space 2} .0058958{col 37}{space 1}   -0.20{col 46}{space 3}0.840{col 54}{space 4}-.0127429{col 67}{space 3} .0103682
+{txt}{space 2}_ISector_6 {c |}{col 14}{res}{space 2} .0066171{col 26}{space 2} .0071235{col 37}{space 1}    0.93{col 46}{space 3}0.353{col 54}{space 4}-.0073447{col 67}{space 3}  .020579
+{txt}{space 2}_ISector_7 {c |}{col 14}{res}{space 2} .0001954{col 26}{space 2} .0036478{col 37}{space 1}    0.05{col 46}{space 3}0.957{col 54}{space 4}-.0069542{col 67}{space 3}  .007345
+{txt}{space 2}_ISector_8 {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (omitted)
+{space 2}_ISector_9 {c |}{col 14}{res}{space 2} .0032637{col 26}{space 2} .0078899{col 37}{space 1}    0.41{col 46}{space 3}0.679{col 54}{space 4}-.0122002{col 67}{space 3} .0187276
+{txt}{space 4}_IFirm_1 {c |}{col 14}{res}{space 2} .0641517{col 26}{space 2} .0333874{col 37}{space 1}    1.92{col 46}{space 3}0.055{col 54}{space 4}-.0012864{col 67}{space 3} .1295899
+{txt}{space 4}_IFirm_2 {c |}{col 14}{res}{space 2} .0598679{col 26}{space 2} .0222237{col 37}{space 1}    2.69{col 46}{space 3}0.007{col 54}{space 4} .0163102{col 67}{space 3} .1034256
+{txt}{space 4}_IFirm_3 {c |}{col 14}{res}{space 2} .0166199{col 26}{space 2} .0130118{col 37}{space 1}    1.28{col 46}{space 3}0.201{col 54}{space 4}-.0088828{col 67}{space 3} .0421226
+{txt}{space 4}_IFirm_4 {c |}{col 14}{res}{space 2} .0119382{col 26}{space 2} .0100121{col 37}{space 1}    1.19{col 46}{space 3}0.233{col 54}{space 4}-.0076852{col 67}{space 3} .0315616
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} .0121902{col 26}{space 2} .6542993{col 37}{space 1}    0.02{col 46}{space 3}0.985{col 54}{space 4}-1.270213{col 67}{space 3} 1.294593
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{com}. 
+. sensemakr Lwage Age Gender Married Married_fe Exp Exp2 i.Degree i.Firm i.Sector escape , treat(escape) benchmark(Gender) contourplot
+{res}
+{space 59}{txt} DOF    =    8896 
+{space 59} q      =    1.00 
+{space 59} alpha  =    0.05 
+{space 59} reduce =    TRUE
+{space 59} H0     =       0
+{res}
+{txt} Treatment{space 5} {c |} {space 4}Coef.{space 5} S.E.{space 6}t(H0){space 4}R2yd.x{space 5}RV_q{space 4}RV_qa
+{res}{hline 16}{c +}{hline 59}
+{txt}         escape {c |}  {res} -0.2798    0.0209   -13.4071    0.0198   0.1324   0.1142
+
+{txt} Partial R2 of the treatment with the outcome (R2yd.x): 
+ An extreme confounder (orthogonal to the covariates) that explains 100 percent of the 
+ residual variance of the outcome, would need to explain at least 1.98 percent of the 
+ residual variance of the treatment to fully account for the observed estimated effect. 
+ 
+{res}{txt} Robustness Value, q = 1.00 (RV_q): 
+ Unobserved confounders (orthogonal to the covariates) that explain more than 13.24 percent 
+ of the residual variance of both the treatment and the outcome are strong enough to bring 
+ the point estimate to 0 (a bias of 100 percent of the original estimate). Conversely, 
+ unobserved confounders that do not explain more than 13.24 percent of the residual variance 
+ of both the treatment and the outcome are not strong enough to bring the point estimate 
+ to 0. 
+ 
+{res}{txt} Robustness Value, q = 1.00, alpha = 0.05 (RV_qa): 
+ Unobserved confounders (orthogonal to the covariates) that explain more than 11.42 percent 
+ of the residual variance of both the treatment and the outcome are strong enough to bring 
+ the estimate to a range where it is no longer 'statistically different' from 0 (a bias 
+ of 100 percent of the original estimate), at the significance level of alpha = 0.05. Conversely,
+ unobserved confounders that do not explain more than 11.42 percent of the residual variance 
+ of both the treatment and the outcome are not strong enough to bring the estimate to a 
+ range where it is no longer 'statistically different' from 0, at the significance 
+ level of alpha = 0.05 
+ 
+{res}{txt} Bounds on Omitted Variable Bias: 
+{res}{txt} The table shows the maximum strength of unobserved confounders, bounded by a multiple of the 
+ observed explanatory power of the chosen benchmark covariate(s) with the treatment and the outcome.
+
+{res}{txt} Bound {space 16}{c |}{space 3}R2dz.x{space 3}R2yz.dx{space 5}Coef.{space 6}S.E.{space 5}t(H0){space 2}Lower CI{space 1}Upper CI 
+{hline 23}{c +}{hline 70}
+{res}{txt} 1.00x          Gender {c |}{res}   0.0100    0.0033   -0.2685    0.0209  -12.8192   -0.3095  -0.2274 
+{txt} 2.00x          Gender {c |}{res}   0.0201    0.0065   -0.2570    0.0210  -12.2297   -0.2982  -0.2158 
+{txt} 3.00x          Gender {c |}{res}   0.0301    0.0098   -0.2454    0.0211  -11.6378   -0.2868  -0.2041 
+
+
+{txt} Extreme Bound{space 9}{c |}{space 3}R2dz.x{space 3}R2yz.dx{space 5}Coef.
+{hline 23}{c +}{hline 30} 
+{res}{txt} 1.00x          Gender {c |}{res}   0.0100{space 2}  1.0000{space 2} -0.0815 
+{txt} 2.00x          Gender {c |}{res}   0.0201{space 2}  1.0000{space 2}  0.0021 
+{txt} 3.00x          Gender {c |}{res}   0.0301{space 2}  1.0000{space 2}  0.0672 
+
+{com}. do "/var/folders/8h/xpkghfwn6gb6slnng7wrw9540000gn/T//SD06126.000000"
+{txt}
+{com}. cem  Age Gender Married Married_fe  , treatment(escape)
+{res}
+{txt}Matching Summary:
+-----------------
+Number of strata: {res}68
+{txt}Number of matched strata: {res}0
+
+           {txt}   0     1     .
+      All  {res}8339   874  5202
+{txt}  Matched  {res}   0     0     0
+{txt}Unmatched  {res}8339   874  5202
+
+
+{txt}NOTE: Treatment has must have only 2 levels to compute distance and weights. In addition, k2k cannot be used.
+
+
+{com}. 
+{txt}end of do-file
+
+{com}. sensemakr Lwage Age Gender Married Married_fe Exp Exp2 i.Degree i.Firm i.Sector escape if cem_matched ==1, treat(escape) benchmark(Gender) contourplot
+{err}no observations
+{txt}{search r(2000), local:r(2000);}
+
+{com}. do "/var/folders/8h/xpkghfwn6gb6slnng7wrw9540000gn/T//SD06126.000000"
+{txt}
+{com}. use "${c -(}MY_LOG_OUT{c )-}/mylog2018.dta", clear
+{txt}
+{com}. 
+{txt}end of do-file
+
+{com}. do "/var/folders/8h/xpkghfwn6gb6slnng7wrw9540000gn/T//SD06126.000000"
+{txt}
+{com}. cem  Age Gender Married Married_fe  , treatment(escape)
+{res}
+{txt}Matching Summary:
+-----------------
+Number of strata: {res}67
+{txt}Number of matched strata: {res}52
+
+           {txt}   0     1
+      All  {res}8339   874
+{txt}  Matched  {res}8081   871
+{txt}Unmatched  {res} 258     3
+
+
+{txt}Multivariate L1 distance: {res}.09686907
+
+{txt}Univariate imbalance:
+
+                 L1     mean      min      25%      50%      75%      max
+       Age  {res} .04298  -.03904        0        0        0        0        0
+{txt}    Gender  {res}9.9e-15  3.3e-15        0        0        0        0        0
+{txt}   Married  {res}8.4e-15  8.2e-15        0        0        0        0        .
+{txt}Married_fe  {res}6.8e-15  3.0e-15        0        0        0        0        .
+{txt}
+{com}. 
+{txt}end of do-file
+
+{com}. sensemakr Lwage Age Gender Married Married_fe Exp Exp2 i.Degree i.Firm i.Sector escape if cem_matched ==1, treat(escape) benchmark(Gender) contourplot
+{res}
+{space 59}{txt} DOF    =    8658 
+{space 59} q      =    1.00 
+{space 59} alpha  =    0.05 
+{space 59} reduce =    TRUE
+{space 59} H0     =       0
+{res}
+{txt} Treatment{space 5} {c |} {space 4}Coef.{space 5} S.E.{space 6}t(H0){space 4}R2yd.x{space 5}RV_q{space 4}RV_qa
+{res}{hline 16}{c +}{hline 59}
+{txt}         escape {c |}  {res} -0.2811    0.0209   -13.4731    0.0205   0.1347   0.1163
+
+{txt} Partial R2 of the treatment with the outcome (R2yd.x): 
+ An extreme confounder (orthogonal to the covariates) that explains 100 percent of the 
+ residual variance of the outcome, would need to explain at least 2.05 percent of the 
+ residual variance of the treatment to fully account for the observed estimated effect. 
+ 
+{res}{txt} Robustness Value, q = 1.00 (RV_q): 
+ Unobserved confounders (orthogonal to the covariates) that explain more than 13.47 percent 
+ of the residual variance of both the treatment and the outcome are strong enough to bring 
+ the point estimate to 0 (a bias of 100 percent of the original estimate). Conversely, 
+ unobserved confounders that do not explain more than 13.47 percent of the residual variance 
+ of both the treatment and the outcome are not strong enough to bring the point estimate 
+ to 0. 
+ 
+{res}{txt} Robustness Value, q = 1.00, alpha = 0.05 (RV_qa): 
+ Unobserved confounders (orthogonal to the covariates) that explain more than 11.63 percent 
+ of the residual variance of both the treatment and the outcome are strong enough to bring 
+ the estimate to a range where it is no longer 'statistically different' from 0 (a bias 
+ of 100 percent of the original estimate), at the significance level of alpha = 0.05. Conversely,
+ unobserved confounders that do not explain more than 11.63 percent of the residual variance 
+ of both the treatment and the outcome are not strong enough to bring the estimate to a 
+ range where it is no longer 'statistically different' from 0, at the significance 
+ level of alpha = 0.05 
+ 
+{res}{txt} Bounds on Omitted Variable Bias: 
+{res}{txt} The table shows the maximum strength of unobserved confounders, bounded by a multiple of the 
+ observed explanatory power of the chosen benchmark covariate(s) with the treatment and the outcome.
+
+{res}{txt} Bound {space 16}{c |}{space 3}R2dz.x{space 3}R2yz.dx{space 5}Coef.{space 6}S.E.{space 5}t(H0){space 2}Lower CI{space 1}Upper CI 
+{hline 23}{c +}{hline 70}
+{res}{txt} 1.00x          Gender {c |}{res}   0.0103    0.0032   -0.2700    0.0209  -12.8929   -0.3111  -0.2290 
+{txt} 2.00x          Gender {c |}{res}   0.0206    0.0063   -0.2588    0.0210  -12.3112   -0.3000  -0.2176 
+{txt} 3.00x          Gender {c |}{res}   0.0309    0.0095   -0.2474    0.0211  -11.7272   -0.2888  -0.2061 
+
+
+{txt} Extreme Bound{space 9}{c |}{space 3}R2dz.x{space 3}R2yz.dx{space 5}Coef.
+{hline 23}{c +}{hline 30} 
+{res}{txt} 1.00x          Gender {c |}{res}   0.0103{space 2}  1.0000{space 2} -0.0832 
+{txt} 2.00x          Gender {c |}{res}   0.0206{space 2}  1.0000{space 2}  0.0003 
+{txt} 3.00x          Gender {c |}{res}   0.0309{space 2}  1.0000{space 2}  0.0654 
+
+{com}. do "/var/folders/8h/xpkghfwn6gb6slnng7wrw9540000gn/T//SD06126.000000"
+{txt}
+{com}. use "${c -(}MY_LOG_OUT{c )-}/mylog2018.dta", clear
+{txt}
+{com}. 
+{txt}end of do-file
+
+{com}. do "/var/folders/8h/xpkghfwn6gb6slnng7wrw9540000gn/T//SD06126.000000"
+{txt}
+{com}. cem  Age Gender Married Married_fe Degree(#0) Exp Exp2 Sector(#0) Firm(#0) , treatment(escape)
+{res}
+{txt}Matching Summary:
+-----------------
+Number of strata: {res}6328
+{txt}Number of matched strata: {res}172
+
+           {txt}   0     1
+      All  {res}8339   874
+{txt}  Matched  {res} 522   261
+{txt}Unmatched  {res}7817   613
+
+
+{txt}Multivariate L1 distance: {res}.42779926
+
+{txt}Univariate imbalance:
+
+                  L1      mean       min       25%       50%       75%       max
+       Age  {res}  .03755    .23794         0         0         0         0         0
+{txt}    Gender  {res} 2.2e-16  -2.2e-16         0         0         0         0         0
+{txt}   Married  {res} 1.1e-16         0         0         0         0         0         0
+{txt}Married_fe  {res} 2.5e-16   5.6e-17         0         0         0         0         0
+{txt}    Degree  {res} 3.2e-16   8.9e-16         0         0         0         0         .
+{txt}       Exp  {res}  .05639   -.12792         0         0        .4        .1         1
+{txt}      Exp2  {res}   .0401   -2.6935         0         0      2.24      2.19        63
+{txt}    Sector  {res} 1.1e-16  -2.2e-16         0         0         0         0         0
+{txt}      Firm  {res} 1.5e-16   2.7e-15         0         0         0         0         0
+{txt}
+{com}. 
+{txt}end of do-file
+
+{com}. sensemakr Lwage Age Gender Married Married_fe Exp Exp2 i.Degree i.Firm i.Sector escape if cem_matched ==1, treat(escape) benchmark(Gender) contourplot
+{res}
+{space 59}{txt} DOF    =     720 
+{space 59} q      =    1.00 
+{space 59} alpha  =    0.05 
+{space 59} reduce =    TRUE
+{space 59} H0     =       0
+{res}
+{txt} Treatment{space 5} {c |} {space 4}Coef.{space 5} S.E.{space 6}t(H0){space 4}R2yd.x{space 5}RV_q{space 4}RV_qa
+{res}{hline 16}{c +}{hline 59}
+{txt}         escape {c |}  {res} -0.1997    0.0502    -3.9803    0.0215   0.1377   0.0724
+
+{txt} Partial R2 of the treatment with the outcome (R2yd.x): 
+ An extreme confounder (orthogonal to the covariates) that explains 100 percent of the 
+ residual variance of the outcome, would need to explain at least 2.15 percent of the 
+ residual variance of the treatment to fully account for the observed estimated effect. 
+ 
+{res}{txt} Robustness Value, q = 1.00 (RV_q): 
+ Unobserved confounders (orthogonal to the covariates) that explain more than 13.77 percent 
+ of the residual variance of both the treatment and the outcome are strong enough to bring 
+ the point estimate to 0 (a bias of 100 percent of the original estimate). Conversely, 
+ unobserved confounders that do not explain more than 13.77 percent of the residual variance 
+ of both the treatment and the outcome are not strong enough to bring the point estimate 
+ to 0. 
+ 
+{res}{txt} Robustness Value, q = 1.00, alpha = 0.05 (RV_qa): 
+ Unobserved confounders (orthogonal to the covariates) that explain more than 7.24 percent 
+ of the residual variance of both the treatment and the outcome are strong enough to bring 
+ the estimate to a range where it is no longer 'statistically different' from 0 (a bias 
+ of 100 percent of the original estimate), at the significance level of alpha = 0.05. Conversely,
+ unobserved confounders that do not explain more than 7.24 percent of the residual variance 
+ of both the treatment and the outcome are not strong enough to bring the estimate to a 
+ range where it is no longer 'statistically different' from 0, at the significance 
+ level of alpha = 0.05 
+ 
+{res}{txt} Bounds on Omitted Variable Bias: 
+{res}{txt} The table shows the maximum strength of unobserved confounders, bounded by a multiple of the 
+ observed explanatory power of the chosen benchmark covariate(s) with the treatment and the outcome.
+
+{res}{txt} Bound {space 16}{c |}{space 3}R2dz.x{space 3}R2yz.dx{space 5}Coef.{space 6}S.E.{space 5}t(H0){space 2}Lower CI{space 1}Upper CI 
+{hline 23}{c +}{hline 70}
+{res}{txt} 1.00x          Gender {c |}{res}   0.0124    0.0050   -0.1890    0.0504   -3.7512   -0.2880  -0.0901 
+{txt} 2.00x          Gender {c |}{res}   0.0247    0.0100   -0.1782    0.0506   -3.5236   -0.2775  -0.0789 
+{txt} 3.00x          Gender {c |}{res}   0.0371    0.0150   -0.1673    0.0508   -3.2946   -0.2670  -0.0676 
+
+
+{txt} Extreme Bound{space 9}{c |}{space 3}R2dz.x{space 3}R2yz.dx{space 5}Coef.
+{hline 23}{c +}{hline 30} 
+{res}{txt} 1.00x          Gender {c |}{res}   0.0124{space 2}  1.0000{space 2} -0.0490 
+{txt} 2.00x          Gender {c |}{res}   0.0247{space 2}  1.0000{space 2}  0.0148 
+{txt} 3.00x          Gender {c |}{res}   0.0371{space 2}  1.0000{space 2}  0.0646 
+
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}/Users/eleonor/Documents/Long/log/sensitivity analysis.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}27 Jul 2021, 23:38:06
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
